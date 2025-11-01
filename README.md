@@ -1,7 +1,7 @@
 # Personal portfolio
 
 
-Welcome to my personal portfolio website — a showcase of my projects, skills, and achievements.
+Welcome to my personal portfolio website showcasing all things me!
 This portfolio was built using Strata by HTML5 UP, a beautifully minimal and responsive template.
 
 ---
