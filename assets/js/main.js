@@ -114,4 +114,14 @@
 
 			});
 
+	// Certification collapsible sections.
+
+		$('.cert-toggle').on('click', function() {
+			var $group = $(this).closest('.cert-group');
+
+			$group.toggleClass('active');
+		});
+
 })(jQuery);
+
+

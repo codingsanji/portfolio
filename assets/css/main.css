@@ -3268,6 +3268,9 @@ input, select, textarea {
 	font-style: italic;
 	}
 
+
+	
+
 /* Music */
 	.spotify-pill {
 		position: relative;      
@@ -3380,3 +3383,86 @@ input, select, textarea {
 		.timeline-line {
 			top: 140px;
 	}}
+
+
+
+	.cert-group {
+		margin-bottom: 1.5em;
+	}
+
+	.cert-toggle {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		padding: 1em 1.2em;
+
+		background: transparent;
+		border: solid 1px #efefef;
+		border-radius: 4px;
+
+		color: #787878;
+		text-align: left;
+		cursor: pointer;
+
+		transition: border-color 0.2s ease,
+					background 0.2s ease;
+	}
+
+	.cert-toggle:hover {
+		border-color: #49bf9d;
+		background: rgba(73, 191, 157, 0.03);
+	}
+
+	.cert-toggle span:first-child {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cert-toggle strong {
+		color: #787878;
+		font-size: 1.4em;
+		font-weight: 700;
+	}
+
+	.cert-toggle small {
+		margin-top: 0.15em;
+		color: #999;
+		font-size: 1.1em;
+	}
+
+	.cert-arrow {
+		color: #49bf9d;
+		font-size: 1.4em;
+		transition: transform 0.25s ease;
+	}
+
+	/* Collapsed content */
+
+	.cert-content {
+		max-height: 0;
+		overflow: hidden;
+		opacity: 0;
+
+		transition:
+			max-height 0.35s ease,
+			opacity 0.25s ease;
+	}
+
+	/* Expanded content */
+
+	.cert-group.active .cert-content {
+		max-height: 1000px;
+		opacity: 1;
+	}
+
+	.cert-group.active .cert-arrow {
+		transform: rotate(45deg);
+	}
+
+	/* Spacing inside expanded section */
+
+	.cert-content .cert-list {
+		margin-top: 1.2em;
+	}
